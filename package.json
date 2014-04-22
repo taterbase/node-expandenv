@@ -1,0 +1,31 @@
+{
+  "name": "expandenv",
+  "version": "1.0.0",
+  "description": "Expand $ENVIRONMENT_VARIABLES in a string",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taterbase/node-expandenv"
+  },
+  "keywords": [
+    "expand",
+    "environment",
+    "env",
+    "variables"
+  ],
+  "author": "taterbase",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/taterbase/node-expandenv/issues"
+  },
+  "homepage": "https://github.com/taterbase/node-expandenv",
+  "devDependencies": {
+    "mocha": "^1.18.2",
+    "should": "^3.3.1"
+  },
+  "dependencies": {
+  }
+}
