@@ -6,9 +6,10 @@ function expandenv(string, env) {
 
   env = merge(process.env, (env || {}))
 
-  return string.replace(/\$[\w]+/g, function(match) {
-    return env[match.replace('$', '')] || match
-  })
+  return string.replace(/\${*[\w]+}*/g, function(match) {
+    return env[match.replace('$', '').replace("{",'').replace("}",'')] || match
+  });
+  
 }
 
 function merge(orig, newObj) {
